@@ -1,7 +1,6 @@
-import { Chat, type Thread } from "chat";
+import { Chat, toAiMessages, type Thread, type Message } from "chat";
 import { createSlackAdapter } from "@chat-adapter/slack";
 import { createMemoryState } from "@chat-adapter/state-memory";
-import type { ModelMessage } from "ai";
 import { runAgent } from "./agent.js";
 import { welcomeCard, suggestedActionsCard } from "./blocks.js";
 
@@ -20,26 +19,19 @@ const bot = new Chat({
 // Helpers
 // ---------------------------------------------------------------------------
 
-/** Collect thread history into CoreMessage[] for the AI SDK. */
-async function collectMessages(thread: Thread): Promise<ModelMessage[]> {
-  const messages: ModelMessage[] = [];
+/** Collect thread history and stream an AI response. */
+async function handleAgentResponse(thread: Thread, message: Message) {
+  await thread.startTyping("Thinking...");
+
+  // Collect conversation history using chat-sdk's built-in converter
+  const allMessages: Message[] = [];
   for await (const msg of thread.allMessages) {
-    if (!msg.text) continue;
-    messages.push({
-      role: msg.author.isBot ? "assistant" : "user",
-      content: msg.text,
-    });
+    allMessages.push(msg);
   }
-  return messages;
-}
+  const history = await toAiMessages(allMessages);
 
-/** Stream an AI agent response into the thread. */
-async function handleAgentResponse(thread: Thread) {
-  const messages = await collectMessages(thread);
-  const result = runAgent(messages);
-
-  // Stream the response — chat-sdk's thread.post() accepts AsyncIterable<string>
-  // and handles Slack's native streaming (post-then-edit with throttled updates)
+  // Run the agent and stream the response directly to Slack
+  const result = runAgent(history);
   await thread.post(result.textStream);
 }
 
@@ -48,21 +40,20 @@ async function handleAgentResponse(thread: Thread) {
 // ---------------------------------------------------------------------------
 
 /**
- * New @mention or DM — greet, subscribe to thread, and respond.
+ * New @mention or DM — subscribe to thread and respond.
  * DMs automatically set isMention=true, so this handles both channels and DMs.
  */
-bot.onNewMention(async (thread) => {
-  // Subscribe so follow-up messages in this thread also get handled
+bot.onNewMention(async (thread, message) => {
   await thread.subscribe();
-  await handleAgentResponse(thread);
+  await handleAgentResponse(thread, message);
 });
 
 /**
- * Follow-up messages in threads the bot has subscribed to.
- * Maintains full conversation context.
+ * Follow-up messages in subscribed threads.
+ * Maintains full conversation context via thread history.
  */
-bot.onSubscribedMessage(async (thread) => {
-  await handleAgentResponse(thread);
+bot.onSubscribedMessage(async (thread, message) => {
+  await handleAgentResponse(thread, message);
 });
 
 /**

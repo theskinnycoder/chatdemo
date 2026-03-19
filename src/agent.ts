@@ -1,4 +1,5 @@
-import { streamText, stepCountIs, type ModelMessage } from "ai";
+import { streamText, stepCountIs } from "ai";
+import type { AiMessage } from "chat";
 import { anthropic } from "@ai-sdk/anthropic";
 import { weatherTool } from "./tools/weather.js";
 import { calculatorTool } from "./tools/calculator.js";
@@ -19,7 +20,7 @@ Guidelines:
  * Returns a streamText result whose textStream can be passed directly
  * to chat-sdk's thread.post() for native Slack streaming.
  */
-export function runAgent(messages: ModelMessage[]) {
+export function runAgent(messages: AiMessage[]) {
   return streamText({
     model: anthropic("claude-sonnet-4-5-20250514"),
     system: SYSTEM_PROMPT,
