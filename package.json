@@ -1,0 +1,27 @@
+{
+  "name": "chatdemo",
+  "version": "1.0.0",
+  "description": "AI-powered Slack bot agent with streaming, thinking, and tools — built with Chat SDK and Vercel AI SDK",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx --env-file=.env src/index.ts",
+    "build": "tsc",
+    "start": "node --env-file=.env dist/index.js"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "latest",
+    "@chat-adapter/slack": "latest",
+    "@chat-adapter/state-memory": "latest",
+    "ai": "^6.0.116",
+    "chat": "latest",
+    "zod": "^3.24"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "tsx": "^4",
+    "typescript": "^5.7"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
