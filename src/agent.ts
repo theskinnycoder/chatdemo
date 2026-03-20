@@ -1,10 +1,10 @@
 import { streamText, stepCountIs } from "ai";
 import type { AiMessage } from "chat";
-import { anthropic } from "@ai-sdk/anthropic";
+import { openai } from "@ai-sdk/openai";
 import { weatherTool } from "./tools/weather.js";
 import { calculatorTool } from "./tools/calculator.js";
 
-const SYSTEM_PROMPT = `You are a helpful Slack bot assistant powered by Claude with access to tools.
+const SYSTEM_PROMPT = `You are a helpful Slack bot assistant powered by OpenAI GPT-5 Mini with access to tools.
 
 Guidelines:
 - Keep responses concise and well-formatted for Slack
@@ -16,24 +16,19 @@ Guidelines:
 - Current date: ${new Date().toISOString().split("T")[0]}`;
 
 /**
- * Runs the AI agent with streaming, tools, and extended thinking.
+ * Runs the AI agent with streaming and tools.
  * Returns a streamText result whose textStream can be passed directly
  * to chat-sdk's thread.post() for native Slack streaming.
  */
 export function runAgent(messages: AiMessage[]) {
-  return streamText({
-    model: anthropic("claude-sonnet-4-5-20250514"),
-    system: SYSTEM_PROMPT,
-    messages,
-    tools: {
-      weather: weatherTool,
-      calculator: calculatorTool,
-    },
-    stopWhen: stepCountIs(5),
-    providerOptions: {
-      anthropic: {
-        thinking: { type: "enabled", budgetTokens: 5000 },
-      },
-    },
-  });
+	return streamText({
+		model: openai("gpt-5-mini"),
+		system: SYSTEM_PROMPT,
+		messages,
+		tools: {
+			weather: weatherTool,
+			calculator: calculatorTool,
+		},
+		stopWhen: stepCountIs(5),
+	});
 }
