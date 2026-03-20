@@ -1,11 +1,10 @@
-# chatdemo — AI Agent Slack Bot
+# Maaya — AI Agent Slack Bot
 
-A streaming AI-powered Slack bot built with [Chat SDK](https://chat-sdk.dev) and [Vercel AI SDK](https://ai-sdk.dev). Uses Claude Sonnet 4.5 with extended thinking, tool calling, and rich BlockKit messages.
+A streaming AI-powered Slack bot built with [Chat SDK](https://chat-sdk.dev), [Vercel AI SDK](https://ai-sdk.dev), [Hono](https://hono.dev), and Bun. Uses OpenAI GPT-5 Mini with tool calling and rich BlockKit messages.
 
 ## Features
 
 - **Streaming responses** — AI responses stream into Slack in real-time
-- **Extended thinking** — Claude reasons through complex questions before responding
 - **Tool calling** — Weather lookups (Open-Meteo) and math calculations
 - **Rich BlockKit UI** — Cards, fields, buttons, and suggested actions
 - **Conversation context** — Maintains thread history for multi-turn conversations
@@ -14,45 +13,18 @@ A streaming AI-powered Slack bot built with [Chat SDK](https://chat-sdk.dev) and
 
 ## Prerequisites
 
-- Node.js 18+
-- pnpm
+- Bun 1.3+
 - A Slack workspace where you can create apps
 
 ## Slack App Setup
 
-1. Go to [api.slack.com/apps](https://api.slack.com/apps) and click **Create New App** → **From scratch**
-2. Name your app and select your workspace
+1. Open `manifest.yaml` and replace the placeholder webhook URLs with your public URL, for example `https://your-domain.com/api/webhooks/slack`.
+2. Go to [api.slack.com/apps](https://api.slack.com/apps) and choose **Create New App** → **From app manifest**.
+3. Paste the contents of `manifest.yaml`, review the generated app config, and create the app.
+4. Install the app to your workspace.
+5. Copy the **Bot User OAuth Token** (`xoxb-...`) and the **Signing Secret** into your local `.env`.
 
-### Bot Token Scopes
-
-Under **OAuth & Permissions**, add these Bot Token Scopes:
-
-| Scope | Purpose |
-|---|---|
-| `app_mentions:read` | Receive @mention events |
-| `assistant:write` | Assistant thread features |
-| `chat:write` | Post messages |
-| `im:history` | Read DM history |
-| `im:read` | Receive DM events |
-| `im:write` | Send DMs |
-
-### Event Subscriptions
-
-Under **Event Subscriptions**, enable events and subscribe to these Bot Events:
-
-- `app_mention` — When someone @mentions the bot
-- `assistant_thread_started` — When a user opens a DM thread
-- `message.im` — Direct messages to the bot
-
-Set the **Request URL** to your server's public URL (e.g. `https://your-server.com/api/events`).
-
-### App Home
-
-Under **App Home**, enable the **Messages Tab** so users can DM the bot.
-
-### Install
-
-Click **Install to Workspace** and copy the **Bot User OAuth Token** (`xoxb-...`).
+The manifest already includes the required scopes, event subscriptions, interactivity settings, and app home configuration.
 
 ## Environment Variables
 
@@ -66,30 +38,30 @@ cp .env.example .env
 |---|---|
 | `SLACK_BOT_TOKEN` | Bot User OAuth Token (`xoxb-...`) |
 | `SLACK_SIGNING_SECRET` | Found in Basic Information → Signing Secret |
-| `ANTHROPIC_API_KEY` | From [console.anthropic.com](https://console.anthropic.com) |
+| `OPENAI_API_KEY` | From [platform.openai.com/api-keys](https://platform.openai.com/api-keys) |
 
 ## Development
 
 ```bash
 # Install dependencies
-pnpm install
+bun install
 
-# Run in development mode (with hot reload)
-pnpm dev
+# Run in development mode (with watch mode)
+bun run dev
 
 # Build for production
-pnpm build
+bun run build
 
 # Run production build
-pnpm start
+bun run start
 ```
 
 ## Architecture
 
 ```
 src/
-├── index.ts          # Chat SDK setup, event handlers, bot startup
-├── agent.ts          # AI agent: streamText + Claude + tools + thinking
+├── index.ts          # Hono server, Slack webhook route, bot startup
+├── agent.ts          # AI agent: streamText + OpenAI + tools
 ├── tools/
 │   ├── weather.ts    # Weather tool (Open-Meteo API, no key needed)
 │   └── calculator.ts # Math expression evaluator
@@ -101,7 +73,7 @@ src/
 1. User @mentions the bot or sends a DM
 2. Chat SDK's `onNewMention` handler fires, subscribes to the thread
 3. Thread message history is collected as `CoreMessage[]`
-4. `streamText()` calls Claude with tools and extended thinking
+4. `streamText()` calls OpenAI with tools
 5. The `textStream` (AsyncIterable) is passed to `thread.post()` for live streaming
 6. Follow-up messages in the thread trigger `onSubscribedMessage` with full context
 

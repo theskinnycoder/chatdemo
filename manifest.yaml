@@ -1,0 +1,58 @@
+_metadata:
+  major_version: 1
+  minor_version: 1
+
+display_information:
+  name: Maaya
+  description: Streaming Slack AI agent powered by OpenAI GPT-5 Mini
+  background_color: "#1d9bd1"
+
+features:
+  app_home:
+    home_tab_enabled: false
+    messages_tab_enabled: true
+    messages_tab_read_only_enabled: false
+  assistant_view:
+    assistant_description: Streaming Slack AI agent powered by OpenAI GPT-5 Mini with weather and calculator tools.
+    suggested_prompts:
+      - title: Check weather
+        message: What's the weather in Tokyo?
+      - title: Do math
+        message: What is 42 * 1337?
+      - title: Get help
+        message: What can you do?
+  bot_user:
+    display_name: Maaya
+    always_online: true
+
+oauth_config:
+  scopes:
+    bot:
+      - app_mentions:read
+      - assistant:write
+      - channels:history
+      - channels:read
+      - chat:write
+      - groups:history
+      - groups:read
+      - im:history
+      - im:read
+      - im:write
+      - users:read
+
+settings:
+  event_subscriptions:
+    request_url: https://your-domain.com/api/webhooks/slack
+    bot_events:
+      - app_mention
+      - message.channels
+      - message.groups
+      - message.im
+      - assistant_thread_started
+      - assistant_thread_context_changed
+  interactivity:
+    is_enabled: true
+    request_url: https://your-domain.com/api/webhooks/slack
+  org_deploy_enabled: false
+  socket_mode_enabled: false
+  token_rotation_enabled: false
