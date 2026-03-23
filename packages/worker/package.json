@@ -1,0 +1,17 @@
+{
+  "name": "@maaya/worker",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "dependencies": {
+    "@maaya/analyst-client": "workspace:*",
+    "chat": "catalog:",
+    "@chat-adapter/slack": "catalog:",
+    "@chat-adapter/state-memory": "catalog:"
+  },
+  "devDependencies": {
+    "@types/bun": "catalog:",
+    "typescript": "catalog:"
+  }
+}

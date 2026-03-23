@@ -1,0 +1,267 @@
+=== What tables are in the database? ===
+event: response.protocol
+data: {"type": "response.protocol", "version": "v1", "protocol": "streaming"}
+event: response.created
+data: {"type": "response.created", "response": {"id": "resp_7ef9bdf7", "created_at": 1774086647, "status": "in_progress", "error": null, "output": [], "session_id": "3c9d55ee-a1fa-4fd4-9597-ec449aad9fd5"}}
+event: response.output_item.added
+data: {"type": "response.output_item.added", "output_index": 0, "item": {"type": "thinking", "id": "item_id_e773b02a", "status": "in_progress", "role": "assistant", "content": []}}
+event: response.content_part.added
+data: {"type": "response.content_part.added", "item_id": "item_id_e773b02a", "output_index": 0, "content_index": 0, "part": {"type": "reasoning", "title": "Collecting relevant tables", "text": ""}}
+event: response.reasoning.replace
+data: {"type": "response.reasoning.replace", "item_id": "item_id_e773b02a", "output_index": 0, "content_index": 0, "text": "Collecting relevant schemas for the query : **all tables database schema**"}
+event: response.reasoning.delta
+data: {"type": "response.reasoning.delta", "item_id": "item_id_e773b02a", "output_index": 0, "content_index": 0, "delta": "\naccessrequestentry, apikey, apikey_access, booksync, bottlelink, commit, creditpackagecontracts, datadogapikeys, datadogrefkeys, invitations, notebookserver, pythonudfs, distributed_databases_on_sites, lmv_async_compiles, lmv_gc_events, mv_active_distributed_transactions, mv_bottomless_api_events, mv_columnar_segment_index, mv_consensus, mv_events, mv_milestones, mv_replication_management_state, pipelines_files, sites, columnstore_merge_status"}
+event: response.reasoning.done
+data: {"type": "response.reasoning.done", "item_id": "item_id_e773b02a", "output_index": 0, "content_index": 0, "title": "Collecting relevant tables", "text": "Collecting relevant schemas for the query : **all tables database schema**\naccessrequestentry, apikey, apikey_access, booksync, bottlelink, commit, creditpackagecontracts, datadogapikeys, datadogrefkeys, invitations, notebookserver, pythonudfs, distributed_databases_on_sites, lmv_async_compiles, lmv_gc_events, mv_active_distributed_transactions, mv_bottomless_api_events, mv_columnar_segment_index, mv_consensus, mv_events, mv_milestones, mv_replication_management_state, pipelines_files, sites, columnstore_merge_status"}
+event: response.content_part.done
+data: {"type": "response.content_part.done", "item_id": "item_id_e773b02a", "output_index": 0, "content_index": 0, "part": {"type": "reasoning", "title": "Collecting relevant tables", "text": "Collecting relevant schemas for the query : **all tables database schema**\naccessrequestentry, apikey, apikey_access, booksync, bottlelink, commit, creditpackagecontracts, datadogapikeys, datadogrefkeys, invitations, notebookserver, pythonudfs, distributed_databases_on_sites, lmv_async_compiles, lmv_gc_events, mv_active_distributed_transactions, mv_bottomless_api_events, mv_columnar_segment_index, mv_consensus, mv_events, mv_milestones, mv_replication_management_state, pipelines_files, sites, columnstore_merge_status"}}
+event: response.output_item.done
+data: {"type": "response.output_item.done", "output_index": 0, "item": {"type": "thinking", "id": "item_id_e773b02a", "status": "completed", "role": "assistant", "content": [{"type": "reasoning", "title": "Collecting relevant tables", "text": "Collecting relevant schemas for the query : **all tables database schema**\naccessrequestentry, apikey, apikey_access, booksync, bottlelink, commit, creditpackagecontracts, datadogapikeys, datadogrefkeys, invitations, notebookserver, pythonudfs, distributed_databases_on_sites, lmv_async_compiles, lmv_gc_events, mv_active_distributed_transactions, mv_bottomless_api_events, mv_columnar_segment_index, mv_consensus, mv_events, mv_milestones, mv_replication_management_state, pipelines_files, sites, columnstore_merge_status"}]}}
+event: response.output_item.added
+data: {"type": "response.output_item.added", "output_index": 1, "item": {"type": "message", "id": "item_id_feca8090", "status": "in_progress", "role": "assistant", "content": []}}
+event: response.content_part.added
+data: {"type": "response.content_part.added", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "part": {"type": "output_text", "text": "", "annotations": []}}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "Here are the databases"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " and tables discovered"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " so"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " far."}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " The schema"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " discovery"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " tool surfaces"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " up"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " to 25 tables at"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " a time \u2014"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " here"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "'s"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " a summary of what was"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " found:\n\n---"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "\n\n###"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " `"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "fre"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "ya` Database"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "\n|"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " Table | Description"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " |\n|---|"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "---|\n| `accessrequest"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "entry` | Access"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " request entries |\n| `apikey"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "` | API keys |\n| `"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "apikey_access` | API key"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " access permissions"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " |\n| `booksync`"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " | Book sync"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " records"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " |\n| `bottlelink`"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " | Bottle link records |\n|"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " `commit` | Commit records |"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "\n| `creditpackagecontr"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "acts` | Credit package contracts |"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "\n| `datadogapikeys"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "` | Datadog API keys |"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "\n| `datadogrefkeys"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "` | Datadog reference"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " keys |\n| `invitations`"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " | User"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " invitations |\n| `noteb"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "ookserver` | Notebook server records"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " |\n| `pythonudfs"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "` | Python UD"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "Fs |"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "\n\n---\n\n### `information_schema`"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " Database"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "\n| Table | Description |\n|"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "---|---|\n| `distributed_databases"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "_on_sites` | Distributed"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " DB"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " site"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " info"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " |\n| `lmv_"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "async_compiles` |"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " Async compile tracking"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " |\n| `lmv_"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "gc_events` | GC events"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " |\n| `mv_active_"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "distributed_transactions` | Active distributed transactions"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " |\n| `mv_bottomless"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "_api_events` | Bottom"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "less storage"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " API events |\n| `mv_"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "columnar_segment_index` |"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " Columnar segment index |\n|"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " `mv_consensus` | Consensus"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " state"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " |\n| `mv_events`"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " |"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " Cluster"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " events |\n| `mv_mil"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "estones` | Milestone"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " tracking"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " |\n| `mv_replication"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "_management_state` | Re"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "plication management state |\n| `pip"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "elines_files` | Pipeline file"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " tracking"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " |\n| `sites` | Site"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "/"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "node"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " info |\n\n---\n\n### `monitoring"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "` Database\n| Table | Description |"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "\n|---|---|\n| `column"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "store_merge_status` |"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " Column"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "store merge status |\n\n---\n\n>"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " **Note:** This"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " is a"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " partial"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " list \u2014"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " the discovery"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " tool returns"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " up to 25 tables per"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " query"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": ". There"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " are"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " likely"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " more tables in the `"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "monitoring"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "` and"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " other"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " databases."}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " Would"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " you like me to search for additional"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " tables by"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " topic"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " ("}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "e.g., metrics"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": ", activity"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": " samples"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": ", pip"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": "elines, queries"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "delta": ")?"}
+event: response.output_text.done
+data: {"type": "response.output_text.done", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "text": "Here are the databases and tables discovered so far. The schema discovery tool surfaces up to 25 tables at a time \u2014 here's a summary of what was found:\n\n---\n\n### `freya` Database\n| Table | Description |\n|---|---|\n| `accessrequestentry` | Access request entries |\n| `apikey` | API keys |\n| `apikey_access` | API key access permissions |\n| `booksync` | Book sync records |\n| `bottlelink` | Bottle link records |\n| `commit` | Commit records |\n| `creditpackagecontracts` | Credit package contracts |\n| `datadogapikeys` | Datadog API keys |\n| `datadogrefkeys` | Datadog reference keys |\n| `invitations` | User invitations |\n| `notebookserver` | Notebook server records |\n| `pythonudfs` | Python UDFs |\n\n---\n\n### `information_schema` Database\n| Table | Description |\n|---|---|\n| `distributed_databases_on_sites` | Distributed DB site info |\n| `lmv_async_compiles` | Async compile tracking |\n| `lmv_gc_events` | GC events |\n| `mv_active_distributed_transactions` | Active distributed transactions |\n| `mv_bottomless_api_events` | Bottomless storage API events |\n| `mv_columnar_segment_index` | Columnar segment index |\n| `mv_consensus` | Consensus state |\n| `mv_events` | Cluster events |\n| `mv_milestones` | Milestone tracking |\n| `mv_replication_management_state` | Replication management state |\n| `pipelines_files` | Pipeline file tracking |\n| `sites` | Site/node info |\n\n---\n\n### `monitoring` Database\n| Table | Description |\n|---|---|\n| `columnstore_merge_status` | Columnstore merge status |\n\n---\n\n> **Note:** This is a partial list \u2014 the discovery tool returns up to 25 tables per query. There are likely more tables in the `monitoring` and other databases. Would you like me to search for additional tables by topic (e.g., metrics, activity samples, pipelines, queries)?"}
+event: response.content_part.done
+data: {"type": "response.content_part.done", "item_id": "item_id_feca8090", "output_index": 1, "content_index": 0, "part": {"type": "output_text", "text": "Here are the databases and tables discovered so far. The schema discovery tool surfaces up to 25 tables at a time \u2014 here's a summary of what was found:\n\n---\n\n### `freya` Database\n| Table | Description |\n|---|---|\n| `accessrequestentry` | Access request entries |\n| `apikey` | API keys |\n| `apikey_access` | API key access permissions |\n| `booksync` | Book sync records |\n| `bottlelink` | Bottle link records |\n| `commit` | Commit records |\n| `creditpackagecontracts` | Credit package contracts |\n| `datadogapikeys` | Datadog API keys |\n| `datadogrefkeys` | Datadog reference keys |\n| `invitations` | User invitations |\n| `notebookserver` | Notebook server records |\n| `pythonudfs` | Python UDFs |\n\n---\n\n### `information_schema` Database\n| Table | Description |\n|---|---|\n| `distributed_databases_on_sites` | Distributed DB site info |\n| `lmv_async_compiles` | Async compile tracking |\n| `lmv_gc_events` | GC events |\n| `mv_active_distributed_transactions` | Active distributed transactions |\n| `mv_bottomless_api_events` | Bottomless storage API events |\n| `mv_columnar_segment_index` | Columnar segment index |\n| `mv_consensus` | Consensus state |\n| `mv_events` | Cluster events |\n| `mv_milestones` | Milestone tracking |\n| `mv_replication_management_state` | Replication management state |\n| `pipelines_files` | Pipeline file tracking |\n| `sites` | Site/node info |\n\n---\n\n### `monitoring` Database\n| Table | Description |\n|---|---|\n| `columnstore_merge_status` | Columnstore merge status |\n\n---\n\n> **Note:** This is a partial list \u2014 the discovery tool returns up to 25 tables per query. There are likely more tables in the `monitoring` and other databases. Would you like me to search for additional tables by topic (e.g., metrics, activity samples, pipelines, queries)?", "annotations": []}}
+event: response.output_item.done
+data: {"type": "response.output_item.done", "output_index": 1, "item": {"type": "message", "id": "item_id_feca8090", "status": "completed", "role": "assistant", "content": [{"type": "output_text", "text": "Here are the databases and tables discovered so far. The schema discovery tool surfaces up to 25 tables at a time \u2014 here's a summary of what was found:\n\n---\n\n### `freya` Database\n| Table | Description |\n|---|---|\n| `accessrequestentry` | Access request entries |\n| `apikey` | API keys |\n| `apikey_access` | API key access permissions |\n| `booksync` | Book sync records |\n| `bottlelink` | Bottle link records |\n| `commit` | Commit records |\n| `creditpackagecontracts` | Credit package contracts |\n| `datadogapikeys` | Datadog API keys |\n| `datadogrefkeys` | Datadog reference keys |\n| `invitations` | User invitations |\n| `notebookserver` | Notebook server records |\n| `pythonudfs` | Python UDFs |\n\n---\n\n### `information_schema` Database\n| Table | Description |\n|---|---|\n| `distributed_databases_on_sites` | Distributed DB site info |\n| `lmv_async_compiles` | Async compile tracking |\n| `lmv_gc_events` | GC events |\n| `mv_active_distributed_transactions` | Active distributed transactions |\n| `mv_bottomless_api_events` | Bottomless storage API events |\n| `mv_columnar_segment_index` | Columnar segment index |\n| `mv_consensus` | Consensus state |\n| `mv_events` | Cluster events |\n| `mv_milestones` | Milestone tracking |\n| `mv_replication_management_state` | Replication management state |\n| `pipelines_files` | Pipeline file tracking |\n| `sites` | Site/node info |\n\n---\n\n### `monitoring` Database\n| Table | Description |\n|---|---|\n| `columnstore_merge_status` | Columnstore merge status |\n\n---\n\n> **Note:** This is a partial list \u2014 the discovery tool returns up to 25 tables per query. There are likely more tables in the `monitoring` and other databases. Would you like me to search for additional tables by topic (e.g., metrics, activity samples, pipelines, queries)?", "annotations": []}]}}
+event: response.follow_up_queries_event
+data: {"type": "response.follow_up_queries_event", "follow_up_queries": ["Could you show more tables in the 'monitoring' database?", "Can you provide a summary of the data in the 'freya.commit' table?", "How about charting the data from the 'information_schema.mv_events' table?"]}
+event: response.completed
+data: {"type": "response.completed", "response": {"id": "resp_7ef9bdf7", "created_at": 1774086647, "status": "completed", "error": null, "output": [{"type": "thinking", "id": "item_id_e773b02a", "status": "completed", "role": "assistant", "content": [{"type": "reasoning", "title": "Collecting relevant tables", "text": "Collecting relevant schemas for the query : **all tables database schema**\naccessrequestentry, apikey, apikey_access, booksync, bottlelink, commit, creditpackagecontracts, datadogapikeys, datadogrefkeys, invitations, notebookserver, pythonudfs, distributed_databases_on_sites, lmv_async_compiles, lmv_gc_events, mv_active_distributed_transactions, mv_bottomless_api_events, mv_columnar_segment_index, mv_consensus, mv_events, mv_milestones, mv_replication_management_state, pipelines_files, sites, columnstore_merge_status"}]}, {"type": "message", "id": "item_id_feca8090", "status": "completed", "role": "assistant", "content": [{"type": "output_text", "text": "Here are the databases and tables discovered so far. The schema discovery tool surfaces up to 25 tables at a time \u2014 here's a summary of what was found:\n\n---\n\n### `freya` Database\n| Table | Description |\n|---|---|\n| `accessrequestentry` | Access request entries |\n| `apikey` | API keys |\n| `apikey_access` | API key access permissions |\n| `booksync` | Book sync records |\n| `bottlelink` | Bottle link records |\n| `commit` | Commit records |\n| `creditpackagecontracts` | Credit package contracts |\n| `datadogapikeys` | Datadog API keys |\n| `datadogrefkeys` | Datadog reference keys |\n| `invitations` | User invitations |\n| `notebookserver` | Notebook server records |\n| `pythonudfs` | Python UDFs |\n\n---\n\n### `information_schema` Database\n| Table | Description |\n|---|---|\n| `distributed_databases_on_sites` | Distributed DB site info |\n| `lmv_async_compiles` | Async compile tracking |\n| `lmv_gc_events` | GC events |\n| `mv_active_distributed_transactions` | Active distributed transactions |\n| `mv_bottomless_api_events` | Bottomless storage API events |\n| `mv_columnar_segment_index` | Columnar segment index |\n| `mv_consensus` | Consensus state |\n| `mv_events` | Cluster events |\n| `mv_milestones` | Milestone tracking |\n| `mv_replication_management_state` | Replication management state |\n| `pipelines_files` | Pipeline file tracking |\n| `sites` | Site/node info |\n\n---\n\n### `monitoring` Database\n| Table | Description |\n|---|---|\n| `columnstore_merge_status` | Columnstore merge status |\n\n---\n\n> **Note:** This is a partial list \u2014 the discovery tool returns up to 25 tables per query. There are likely more tables in the `monitoring` and other databases. Would you like me to search for additional tables by topic (e.g., metrics, activity samples, pipelines, queries)?", "annotations": []}]}], "session_id": "3c9d55ee-a1fa-4fd4-9597-ec449aad9fd5", "checkpoint_id": "1f1250b7-7145-6696-8004-aef525c980a1"}}
+
+Time: 62.0s

@@ -1,0 +1,171 @@
+=== Show me a chart of commits over the last 30 days ===
+event: response.protocol
+data: {"type": "response.protocol", "version": "v1", "protocol": "streaming"}
+event: response.created
+data: {"type": "response.created", "response": {"id": "resp_888ae68b", "created_at": 1774086675, "status": "in_progress", "error": null, "output": [], "session_id": "4279089d-db8b-4a5b-9547-c381e939080c"}}
+event: response.output_item.added
+data: {"type": "response.output_item.added", "output_index": 0, "item": {"type": "message", "id": "item_id_ff5a630e", "status": "in_progress", "role": "assistant", "content": []}}
+event: response.content_part.added
+data: {"type": "response.content_part.added", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "part": {"type": "output_text", "text": "", "annotations": []}}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": "I"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " don"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": "'t have access to a commits"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " dataset or repository"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " data"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " in"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " this"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " environment"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": ". My"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " capabilities"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " are focused"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " on **"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": "Single"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": "Store cluster"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " diagnost"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": "ics and"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " incident"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " analysis"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": "**,"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " including"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": ":\n\n- **Cluster health"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": "**"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " \u2014"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " CPU"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": ", memory, disk, and network metrics"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": "\n- **Query"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " work"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": "load analysis"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": "** \u2014 top"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " queries"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " by"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " CPU"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": ", elapsed"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " time, failures"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": ", etc"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": ".\n- **Pipeline"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " monitoring"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": "** \u2014 Kafka pipeline"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " lag"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": ", errors"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": ", and batch"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " status"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": "\n- **Cluster"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " lifecycle"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": "** \u2014 provis"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": "ioning, scaling, suspend"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": "/resume operations"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": "\n- **Logs"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": "**"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " \u2014 cluster"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": ","}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " operator"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": ", leaf"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": ", aggreg"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": "ator, pus"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": "her, and control"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " plane service"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " logs\n\nIf you have a **"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": "SingleStore cluster incident"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " or"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " performance"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " question"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": "**, I'd be happy to help!"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " Please"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " provide"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " a"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " **"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": "cluster"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " ID or"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " workspace ID"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": "**"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " to"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " get"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": " started"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "delta": "."}
+event: response.output_text.done
+data: {"type": "response.output_text.done", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "text": "I don't have access to a commits dataset or repository data in this environment. My capabilities are focused on **SingleStore cluster diagnostics and incident analysis**, including:\n\n- **Cluster health** \u2014 CPU, memory, disk, and network metrics\n- **Query workload analysis** \u2014 top queries by CPU, elapsed time, failures, etc.\n- **Pipeline monitoring** \u2014 Kafka pipeline lag, errors, and batch status\n- **Cluster lifecycle** \u2014 provisioning, scaling, suspend/resume operations\n- **Logs** \u2014 cluster, operator, leaf, aggregator, pusher, and control plane service logs\n\nIf you have a **SingleStore cluster incident or performance question**, I'd be happy to help! Please provide a **cluster ID or workspace ID** to get started."}
+event: response.content_part.done
+data: {"type": "response.content_part.done", "item_id": "item_id_ff5a630e", "output_index": 0, "content_index": 0, "part": {"type": "output_text", "text": "I don't have access to a commits dataset or repository data in this environment. My capabilities are focused on **SingleStore cluster diagnostics and incident analysis**, including:\n\n- **Cluster health** \u2014 CPU, memory, disk, and network metrics\n- **Query workload analysis** \u2014 top queries by CPU, elapsed time, failures, etc.\n- **Pipeline monitoring** \u2014 Kafka pipeline lag, errors, and batch status\n- **Cluster lifecycle** \u2014 provisioning, scaling, suspend/resume operations\n- **Logs** \u2014 cluster, operator, leaf, aggregator, pusher, and control plane service logs\n\nIf you have a **SingleStore cluster incident or performance question**, I'd be happy to help! Please provide a **cluster ID or workspace ID** to get started.", "annotations": []}}
+event: response.output_item.done
+data: {"type": "response.output_item.done", "output_index": 0, "item": {"type": "message", "id": "item_id_ff5a630e", "status": "completed", "role": "assistant", "content": [{"type": "output_text", "text": "I don't have access to a commits dataset or repository data in this environment. My capabilities are focused on **SingleStore cluster diagnostics and incident analysis**, including:\n\n- **Cluster health** \u2014 CPU, memory, disk, and network metrics\n- **Query workload analysis** \u2014 top queries by CPU, elapsed time, failures, etc.\n- **Pipeline monitoring** \u2014 Kafka pipeline lag, errors, and batch status\n- **Cluster lifecycle** \u2014 provisioning, scaling, suspend/resume operations\n- **Logs** \u2014 cluster, operator, leaf, aggregator, pusher, and control plane service logs\n\nIf you have a **SingleStore cluster incident or performance question**, I'd be happy to help! Please provide a **cluster ID or workspace ID** to get started.", "annotations": []}]}}
+event: response.follow_up_queries_event
+data: {"type": "response.follow_up_queries_event", "follow_up_queries": ["Can you show me the cluster health metrics?", "What about the top queries by CPU usage?", "How about the Kafka pipeline lag and errors?"]}
+event: response.completed
+data: {"type": "response.completed", "response": {"id": "resp_888ae68b", "created_at": 1774086675, "status": "completed", "error": null, "output": [{"type": "message", "id": "item_id_ff5a630e", "status": "completed", "role": "assistant", "content": [{"type": "output_text", "text": "I don't have access to a commits dataset or repository data in this environment. My capabilities are focused on **SingleStore cluster diagnostics and incident analysis**, including:\n\n- **Cluster health** \u2014 CPU, memory, disk, and network metrics\n- **Query workload analysis** \u2014 top queries by CPU, elapsed time, failures, etc.\n- **Pipeline monitoring** \u2014 Kafka pipeline lag, errors, and batch status\n- **Cluster lifecycle** \u2014 provisioning, scaling, suspend/resume operations\n- **Logs** \u2014 cluster, operator, leaf, aggregator, pusher, and control plane service logs\n\nIf you have a **SingleStore cluster incident or performance question**, I'd be happy to help! Please provide a **cluster ID or workspace ID** to get started.", "annotations": []}]}], "session_id": "4279089d-db8b-4a5b-9547-c381e939080c", "checkpoint_id": "1f1250b8-4d6c-6451-8002-93024864190c"}}
+
+Time: 9.5s

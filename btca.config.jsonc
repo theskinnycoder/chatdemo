@@ -1,57 +1,57 @@
 {
-  "$schema": "https://btca.dev/btca.schema.json",
-  "dataDirectory": ".btca",
-  "resources": [
-    {
-      "type": "npm",
-      "name": "ai",
-      "package": "ai",
-      "version": "6.0.116"
-    },
-    {
-      "type": "npm",
-      "name": "ai-sdk-openai",
-      "package": "@ai-sdk/openai",
-      "version": "3.0.41"
-    },
-    {
-      "type": "npm",
-      "name": "chat-adapter-slack",
-      "package": "@chat-adapter/slack",
-      "version": "4.20.2"
-    },
-    {
-      "type": "npm",
-      "name": "chat-adapter-state-memory",
-      "package": "@chat-adapter/state-memory",
-      "version": "4.20.2"
-    },
-    {
-      "type": "npm",
-      "name": "chat",
-      "package": "chat",
-      "version": "4.20.2"
-    },
-    {
-      "type": "npm",
-      "name": "zod",
-      "package": "zod",
-      "version": "4.3.6"
-    },
-    {
-      "type": "git",
-      "name": "bun",
-      "url": "https://github.com/oven-sh/bun",
-      "branch": "main",
-      "specialNotes": "Bun runtime and package manager source/docs repo."
-    },
-    {
-      "type": "npm",
-      "name": "hono",
-      "package": "hono",
-      "version": "4.12.8"
-    }
-  ],
-  "model": "gpt-5.3-codex-spark",
-  "provider": "openai"
+	"$schema": "https://btca.dev/btca.schema.json",
+	"dataDirectory": ".btca",
+	"resources": [
+		{
+			"type": "npm",
+			"name": "ai",
+			"package": "ai",
+			"version": "6.0.116",
+		},
+		{
+			"type": "npm",
+			"name": "ai-sdk-openai",
+			"package": "@ai-sdk/openai",
+			"version": "3.0.41",
+		},
+		{
+			"type": "npm",
+			"name": "chat-adapter-slack",
+			"package": "@chat-adapter/slack",
+			"version": "4.20.2",
+		},
+		{
+			"type": "npm",
+			"name": "chat-adapter-state-memory",
+			"package": "@chat-adapter/state-memory",
+			"version": "4.20.2",
+		},
+		{
+			"type": "npm",
+			"name": "chat",
+			"package": "chat",
+			"version": "4.20.2",
+		},
+		{
+			"type": "npm",
+			"name": "zod",
+			"package": "zod",
+			"version": "4.3.6",
+		},
+		{
+			"type": "git",
+			"name": "bun",
+			"url": "https://github.com/oven-sh/bun",
+			"branch": "main",
+			"specialNotes": "Bun runtime and package manager source/docs repo.",
+		},
+		{
+			"type": "npm",
+			"name": "hono",
+			"package": "hono",
+			"version": "4.12.8",
+		},
+	],
+	"model": "gpt-5.3-codex-spark",
+	"provider": "openai",
 }

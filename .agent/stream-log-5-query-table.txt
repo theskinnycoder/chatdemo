@@ -1,0 +1,137 @@
+=== What are the top 5 most recent commits? Show the data. ===
+event: response.protocol
+data: {"type": "response.protocol", "version": "v1", "protocol": "streaming"}
+event: response.created
+data: {"type": "response.created", "response": {"id": "resp_8bc6492e", "created_at": 1774086677, "status": "in_progress", "error": null, "output": [], "session_id": "63d3e767-673e-40d5-8975-702ef604794c"}}
+event: response.output_item.added
+data: {"type": "response.output_item.added", "output_index": 0, "item": {"type": "message", "id": "item_id_bc6a8a37", "status": "in_progress", "role": "assistant", "content": []}}
+event: response.content_part.added
+data: {"type": "response.content_part.added", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "part": {"type": "output_text", "text": "", "annotations": []}}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": "I don"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": "'t have access to any"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": " code"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": " repository"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": " or version"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": " control system ("}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": "like"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": " GitHub"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": ", GitLab, or Bit"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": "bucket) in"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": " my"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": " available"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": " tools. My"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": " capabilities"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": " are focused"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": " on:"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": "\n\n-"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": " **"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": "Single"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": "Store cluster"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": " diagnost"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": "ics** (performance"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": ", incidents"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": ", resource"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": " utilization)\n- **Control"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": " plane metadata"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": "** (cluster"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": "/"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": "workspace/project"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": " info"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": ")\n- **Monitoring"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": " data"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": "** (query"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": " work"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": "lo"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": "ads, CPU"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": "/memory/disk metrics"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": ")\n- **Logs"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": "**"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": " (cluster"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": " and"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": " control"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": " plane service"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": " logs)\n- **Knowledge"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": " base"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": " search"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": "** (internal"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": " documentation)"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": "\n\nIf"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": " you have a **"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": "cluster"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": " incident"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": " or"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": " performance question"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": "**, I'd be happy to help!"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": " Could"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": " you clar"}
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "delta": "ify what you're looking for?"}
+event: response.output_text.done
+data: {"type": "response.output_text.done", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "text": "I don't have access to any code repository or version control system (like GitHub, GitLab, or Bitbucket) in my available tools. My capabilities are focused on:\n\n- **SingleStore cluster diagnostics** (performance, incidents, resource utilization)\n- **Control plane metadata** (cluster/workspace/project info)\n- **Monitoring data** (query workloads, CPU/memory/disk metrics)\n- **Logs** (cluster and control plane service logs)\n- **Knowledge base search** (internal documentation)\n\nIf you have a **cluster incident or performance question**, I'd be happy to help! Could you clarify what you're looking for?"}
+event: response.content_part.done
+data: {"type": "response.content_part.done", "item_id": "item_id_bc6a8a37", "output_index": 0, "content_index": 0, "part": {"type": "output_text", "text": "I don't have access to any code repository or version control system (like GitHub, GitLab, or Bitbucket) in my available tools. My capabilities are focused on:\n\n- **SingleStore cluster diagnostics** (performance, incidents, resource utilization)\n- **Control plane metadata** (cluster/workspace/project info)\n- **Monitoring data** (query workloads, CPU/memory/disk metrics)\n- **Logs** (cluster and control plane service logs)\n- **Knowledge base search** (internal documentation)\n\nIf you have a **cluster incident or performance question**, I'd be happy to help! Could you clarify what you're looking for?", "annotations": []}}
+event: response.output_item.done
+data: {"type": "response.output_item.done", "output_index": 0, "item": {"type": "message", "id": "item_id_bc6a8a37", "status": "completed", "role": "assistant", "content": [{"type": "output_text", "text": "I don't have access to any code repository or version control system (like GitHub, GitLab, or Bitbucket) in my available tools. My capabilities are focused on:\n\n- **SingleStore cluster diagnostics** (performance, incidents, resource utilization)\n- **Control plane metadata** (cluster/workspace/project info)\n- **Monitoring data** (query workloads, CPU/memory/disk metrics)\n- **Logs** (cluster and control plane service logs)\n- **Knowledge base search** (internal documentation)\n\nIf you have a **cluster incident or performance question**, I'd be happy to help! Could you clarify what you're looking for?", "annotations": []}]}}
+event: response.follow_up_queries_event
+data: {"type": "response.follow_up_queries_event", "follow_up_queries": ["Can you show recent cluster incidents?", "What about current cluster performance metrics?", "How about recent control plane logs?"]}
+event: response.completed
+data: {"type": "response.completed", "response": {"id": "resp_8bc6492e", "created_at": 1774086677, "status": "completed", "error": null, "output": [{"type": "message", "id": "item_id_bc6a8a37", "status": "completed", "role": "assistant", "content": [{"type": "output_text", "text": "I don't have access to any code repository or version control system (like GitHub, GitLab, or Bitbucket) in my available tools. My capabilities are focused on:\n\n- **SingleStore cluster diagnostics** (performance, incidents, resource utilization)\n- **Control plane metadata** (cluster/workspace/project info)\n- **Monitoring data** (query workloads, CPU/memory/disk metrics)\n- **Logs** (cluster and control plane service logs)\n- **Knowledge base search** (internal documentation)\n\nIf you have a **cluster incident or performance question**, I'd be happy to help! Could you clarify what you're looking for?", "annotations": []}]}], "session_id": "63d3e767-673e-40d5-8975-702ef604794c", "checkpoint_id": "1f1250b8-55a4-6d5f-8002-50306bac60a0"}}
+
+Time: 7.3s

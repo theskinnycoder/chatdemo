@@ -6,13 +6,9 @@
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "outDir": "dist",
-    "rootDir": "src",
-    "declaration": false,
     "sourceMap": true,
+    "noEmit": true,
     "jsx": "react-jsx",
     "jsxImportSource": "chat"
-  },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist"]
+  }
 }

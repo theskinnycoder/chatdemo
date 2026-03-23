@@ -1,15 +1,20 @@
 {
-  "version": 1,
-  "skills": {
-    "btca-cli": {
-      "source": "davis7dotsh/better-context",
-      "sourceType": "github",
-      "computedHash": "99bc5301f4f839a6f3be99d98955f32f1cd576c218731fa05fa54a003bd20e9b"
-    },
-    "context7-cli": {
-      "source": "upstash/context7",
-      "sourceType": "github",
-      "computedHash": "6077b3c638fb7efb31d9b2c815436650de4aef73e7b671edec2f1c63f6a1e105"
-    }
-  }
+	"version": 1,
+	"skills": {
+		"btca-cli": {
+			"source": "davis7dotsh/better-context",
+			"sourceType": "github",
+			"computedHash": "99bc5301f4f839a6f3be99d98955f32f1cd576c218731fa05fa54a003bd20e9b"
+		},
+		"chat-sdk": {
+			"source": "vercel/chat",
+			"sourceType": "github",
+			"computedHash": "3483217a04e5abd951e9f90f26beb062cdcccb5785a3b2a97ec9fe797536a135"
+		},
+		"find-docs": {
+			"source": "upstash/context7",
+			"sourceType": "github",
+			"computedHash": "b631499b08026841fe535f17927d692fc37d29111032ee1991e55ecec1f937be"
+		}
+	}
 }

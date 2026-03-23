@@ -4,7 +4,7 @@ A streaming AI-powered Slack bot built with [Chat SDK](https://chat-sdk.dev), [V
 
 ## Features
 
-- **Streaming responses** — AI responses stream into Slack in real-time
+- **Streaming responses** — AI responses stream into channels, MPIMs, and Slack Assistant threads in real-time
 - **Tool calling** — Weather lookups (Open-Meteo) and math calculations
 - **Rich BlockKit UI** — Cards, fields, buttons, and suggested actions
 - **Conversation context** — Maintains thread history for multi-turn conversations
@@ -71,19 +71,20 @@ src/
 ### How It Works
 
 1. User @mentions the bot or sends a DM
-2. Chat SDK's `onNewMention` handler fires, subscribes to the thread
+2. Chat SDK routes channel mentions, DMs, and assistant thread messages into the bot handlers
 3. Thread message history is collected as `CoreMessage[]`
 4. `streamText()` calls OpenAI with tools
-5. The `textStream` (AsyncIterable) is passed to `thread.post()` for live streaming
-6. Follow-up messages in the thread trigger `onSubscribedMessage` with full context
+5. The `fullStream` (AsyncIterable) is passed to `thread.post()` for live streaming
+6. Assistant lifecycle hooks set suggested prompts and status for Slack Assistant threads
+7. Follow-up messages in subscribed threads trigger `onSubscribedMessage` with full context
 
 ### Key Integration
 
-The magic is in passing AI SDK's `result.textStream` directly to Chat SDK's `thread.post()`:
+The core integration is passing AI SDK's `result.fullStream` directly to Chat SDK's `thread.post()`:
 
 ```typescript
 const result = streamText({ model, messages, tools });
-await thread.post(result.textStream); // Streams to Slack in real-time
+await thread.post(result.fullStream); // Streams to Slack in real-time
 ```
 
 Chat SDK handles the Slack-specific streaming protocol (post-then-edit with throttled updates).
